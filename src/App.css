@@ -1,0 +1,74 @@
+/* ===== CSS Variables ===== */
+:root {
+  --primary-green: #495E57;
+  --primary-yellow: #F4CE14;
+  --secondary-orange: #EE9972;
+  --secondary-peach: #FBDABB;
+  --highlight-light: #EDEFEE;
+  --highlight-dark: #333333;
+  --white: #FFFFFF;
+  --font-display: 'Markazi Text', serif;
+  --font-body: 'Karla', sans-serif;
+}
+
+/* ===== Reset & Base ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--highlight-dark);
+  background-color: var(--white);
+}
+
+/* ===== Layout ===== */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* ===== Buttons ===== */
+.btn-primary {
+  background-color: var(--primary-yellow);
+  color: var(--highlight-dark);
+  border: none;
+  padding: 12px 28px;
+  border-radius: 16px;
+  font-family: var(--font-body);
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn-primary:hover {
+  background-color: #e0b800;
+  transform: translateY(-1px);
+}
+
+.btn-primary:focus {
+  outline: 3px solid var(--primary-green);
+  outline-offset: 2px;
+}
+
+/* ===== Skip to content (accessibility) ===== */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: var(--primary-green);
+  color: white;
+  padding: 8px;
+  z-index: 100;
+  text-decoration: none;
+}
+
+.skip-link:focus {
+  top: 0;
+}
